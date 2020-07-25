@@ -1,0 +1,200 @@
+$font-main:'Orbitron', sans-serif;
+
+@mixin setHeightWidth($width,$height) {
+    width:$width;
+    height:$height;
+}
+
+@mixin setBorder($size,$type,$colors){
+    border:$size $type $colors;
+}
+
+@mixin setDisplay($type,$direction,$position,$alignment) {
+    display:$type;
+    flex-direction:$direction;
+    justify-content:$position;
+    align-items:$alignment;
+}
+
+@mixin setMarginLeftRight($left,$right){
+    margin-left:$left;
+    margin-right:$right;
+}
+
+@mixin setMarginTopLeft($top,$left){
+    margin-top:$top;
+    margin-left:$left;
+}
+
+@mixin setMarginTopRight($top,$right){
+    margin-top:$top;
+    margin-right:$right;
+}
+
+body{
+    font-family: $font-main;
+}
+
+#markdown-with-logo{
+    text-align: center;
+    padding-top: 5vh;
+}
+#react-head{
+    @include setMarginLeftRight(20vw,20vw);
+    background-color: black;
+    color:white;
+}
+
+code{
+color: black;
+background-color:rgb(223, 223, 223);
+}
+
+blockquote{
+    padding-left:2vw;
+    background-color:rgb(212, 212, 212);
+}
+
+#editor{
+    @include setHeightWidth(45vw,45vw);
+    @include setBorder(2px,solid,black);
+    padding-left:1vw;
+    padding-top: 2vw;
+    color:rgb(11, 224, 11);
+    overflow:scroll;
+}
+
+#main{
+    @include setDisplay(flex,row,center,center);
+    margin-right:1vw;
+}
+
+#textAreaContainer{
+    @include setMarginTopRight(5vw,2vw);
+}
+
+#previewContainer{
+    @include setMarginTopLeft(5vw,2vw);
+}
+
+#preview{
+    padding-top: 2vw;
+    padding-left:1vw;
+    padding-right:1vw;
+    @include setHeightWidth(45vw,45vw);
+    background-color:rgb(255, 255, 255);
+    @include setBorder(2px,solid,black);
+    overflow:scroll;
+}
+#editor-head{
+    background:black;
+    color:white;
+    margin:0;
+    text-align: center;
+}
+
+#preview-head{
+    background:black;
+    color:white;
+    margin:0;
+    text-align: center;
+}
+
+@media (min-width:996px) and (max-width:1162px){
+    #react-head{
+        @include setMarginLeftRight(15vw,15vw);
+    }
+    #main{
+        flex-direction: column;
+    }
+    #textAreaContainer{
+        @include setMarginTopRight(5vw,0vw);
+    }
+    #previewContainer{
+        @include setMarginTopLeft(5vw,0vw);
+    }
+    #editor{
+        @include setHeightWidth(65vw,65vw);
+    }
+    #preview{
+        @include setHeightWidth(65vw,65vw);
+    }
+}
+
+@media (min-width:699px)and(max-width:995px){
+    #markdown-with-logo{
+        padding:0px;
+        padding-top: 2vh;
+    }
+    #react-head{
+        padding:0px;
+        @include setMarginLeftRight(0vw,0vw);
+    }
+    #main{
+        flex-direction: column;
+    }
+    #textAreaContainer{
+        @include setMarginTopRight(5vw,0vw);
+    }
+    #previewContainer{
+        @include setMarginTopLeft(5vw,0vw);
+    }
+    #editor{
+        @include setHeightWidth(75vw,75vw);  
+    }
+    #preview{
+        @include setHeightWidth(75vw,75vw);
+    }
+}
+
+@media (min-width:420px) and (max-width:698px){
+    #markdown-with-logo{
+        padding:0px;
+        padding-top: 2vh;
+    }
+    #react-head{
+        padding:0px;
+        @include setMarginLeftRight(16vw,20vw);
+    }
+    #main{
+        flex-direction: column;
+    }
+    #textAreaContainer{
+        @include setMarginTopRight(5vw,0vw); 
+    }
+    #previewContainer{
+        @include setMarginTopLeft(5vw,0vw);
+    }
+    #editor{
+        @include setHeightWidth(85vw,85vw);
+    }
+    #preview{
+        @include setHeightWidth(85vw,85vw);
+    } 
+}
+
+@media (max-width:419px){
+    #markdown-with-logo{
+        padding:0px;
+        padding-top: 2vh;
+    }
+    #react-head{
+        padding:0px;
+        @include setMarginLeftRight(0vw,0vw);
+    }
+    #main{
+        flex-direction: column;
+    }
+    #textAreaContainer{
+        @include setMarginTopRight(5vw,0vw);
+    }
+    #previewContainer{
+        @include setMarginTopLeft(5vw,0vw);
+    }
+    #editor{
+        @include setHeightWidth(90vw,90vw);
+    }
+    #preview{
+        @include setHeightWidth(90vw,90vw);
+    } 
+}

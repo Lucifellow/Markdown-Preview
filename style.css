@@ -1,0 +1,219 @@
+body {
+  font-family: "Orbitron", sans-serif;
+}
+
+#markdown-with-logo {
+  text-align: center;
+  padding-top: 5vh;
+}
+
+#react-head {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  background-color: black;
+  color: white;
+}
+
+code {
+  color: black;
+  background-color: #dfdfdf;
+}
+
+blockquote {
+  padding-left: 2vw;
+  background-color: #d4d4d4;
+}
+
+#editor {
+  width: 45vw;
+  height: 45vw;
+  border: 2px solid black;
+  padding-left: 1vw;
+  padding-top: 2vw;
+  color: #0be00b;
+  overflow: scroll;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1vw;
+}
+
+#textAreaContainer {
+  margin-top: 5vw;
+  margin-right: 2vw;
+}
+
+#previewContainer {
+  margin-top: 5vw;
+  margin-left: 2vw;
+}
+
+#preview {
+  padding-top: 2vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  width: 45vw;
+  height: 45vw;
+  background-color: white;
+  border: 2px solid black;
+  overflow: scroll;
+}
+
+#editor-head {
+  background: black;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+#preview-head {
+  background: black;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+@media (min-width: 996px) and (max-width: 1162px) {
+  #react-head {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+
+  #main {
+    flex-direction: column;
+  }
+
+  #textAreaContainer {
+    margin-top: 5vw;
+    margin-right: 0vw;
+  }
+
+  #previewContainer {
+    margin-top: 5vw;
+    margin-left: 0vw;
+  }
+
+  #editor {
+    width: 65vw;
+    height: 65vw;
+  }
+
+  #preview {
+    width: 65vw;
+    height: 65vw;
+  }
+}
+@media (min-width: 699px) and (max-width: 995px) {
+  #markdown-with-logo {
+    padding: 0px;
+    padding-top: 2vh;
+  }
+
+  #react-head {
+    padding: 0px;
+    margin-left: 0vw;
+    margin-right: 0vw;
+  }
+
+  #main {
+    flex-direction: column;
+  }
+
+  #textAreaContainer {
+    margin-top: 5vw;
+    margin-right: 0vw;
+  }
+
+  #previewContainer {
+    margin-top: 5vw;
+    margin-left: 0vw;
+  }
+
+  #editor {
+    width: 75vw;
+    height: 75vw;
+  }
+
+  #preview {
+    width: 75vw;
+    height: 75vw;
+  }
+}
+@media (min-width: 420px) and (max-width: 698px) {
+  #markdown-with-logo {
+    padding: 0px;
+    padding-top: 2vh;
+  }
+
+  #react-head {
+    padding: 0px;
+    margin-left: 16vw;
+    margin-right: 20vw;
+  }
+
+  #main {
+    flex-direction: column;
+  }
+
+  #textAreaContainer {
+    margin-top: 5vw;
+    margin-right: 0vw;
+  }
+
+  #previewContainer {
+    margin-top: 5vw;
+    margin-left: 0vw;
+  }
+
+  #editor {
+    width: 85vw;
+    height: 85vw;
+  }
+
+  #preview {
+    width: 85vw;
+    height: 85vw;
+  }
+}
+@media (max-width: 419px) {
+  #markdown-with-logo {
+    padding: 0px;
+    padding-top: 2vh;
+  }
+
+  #react-head {
+    padding: 0px;
+    margin-left: 0vw;
+    margin-right: 0vw;
+  }
+
+  #main {
+    flex-direction: column;
+  }
+
+  #textAreaContainer {
+    margin-top: 5vw;
+    margin-right: 0vw;
+  }
+
+  #previewContainer {
+    margin-top: 5vw;
+    margin-left: 0vw;
+  }
+
+  #editor {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  #preview {
+    width: 90vw;
+    height: 90vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
